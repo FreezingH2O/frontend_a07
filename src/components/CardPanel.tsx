@@ -42,7 +42,7 @@ const mockVenue =[
       <div className="flex flex-row flex-wrap gap-8 m-8 mx-[5vw] p-10">
         {
           mockVenue.map((venue)=>(
-            <Link href={`/venue/${venue.vid}`} className="p-5 w-1/4">
+            <Link href={`/venue/${venue.vid}`} className="p-5 w-1/4 max-w-[350px]">
             <Card {...venue} rating={ratings.get(venue.venueName) ?? 0} onRatingChange={handleRatingChange} />
             </Link>
           ))
